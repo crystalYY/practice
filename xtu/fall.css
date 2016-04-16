@@ -1,0 +1,20 @@
+body{
+	background:url(background.png) left top repeat-x;
+}
+#fall1{
+	position:absolute;
+	top:40px;
+	left:150px;
+	z-index:999;
+}
+#fall2{
+	position:absolute;
+	top:40px;
+	left:900px;
+	transform:rotate(-17deg);
+}
+h6{
+	position:absolute;
+	top:100px;
+	left:500px;
+}

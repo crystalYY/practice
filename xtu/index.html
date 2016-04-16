@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>湘大，你好！</title>
+		<meta http-equiv="content-type" content="text/html" charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="xtu.css"/>
+		<script type="text/javascript" src="jquery.js"></script>
+	</head>
+	<body>
+		<div id="main">
+			<p><img src="gate.png" id="hello" alt="你好，湘大"/></p>
+			<p id="image"><a href="spring.html"><img name="hover_spring" id="spring" src="spring_default.png" alt="spring"/></a>
+				<a href="summer.html"><img name="hover_summer" id="summer" src="summer_default.png" alt="summer"/></a>
+				<a href="fall.html"><img name="hover_fall" id="fall" src="fall_default.png" alt="fall"/></a>
+				<a href="winter.html"><img name="hover_winter" id="winter" src="winter_default.png" alt="winter"/></a>
+			</p>
+			<p id="one"><img src="spring.png" alt="spring"/>
+			<img src="summer.png" alt="summer" class="des"/>
+			<img src="fall.png" alt="fall" class="des"/>
+			<img src="winter.png" alt="winter" class="des"/></p>
+		</div>
+			<script type="text/javascript">
+				$(window).load(function(){
+					$('img[name^=hover]').hover(function(){
+						$(this).attr("src",$(this).attr("id")+"_over.png");
+						},
+						function(){
+							$(this).attr("src",$(this).attr("id")+"_default.png");
+						});
+					});						
+			</script>
+	</body>
+</html>

@@ -1,0 +1,27 @@
+body{
+	background:url(background.png) left top repeat-x;
+}
+#hello{
+	margin-left:-9px;
+	margin-top:-17px;
+}
+#spring{
+	margin-left:130px;
+	margin-top:10px;
+}
+#summer{
+	margin-left:150px;
+}
+#fall{
+	margin-left:150px;
+}
+#winter{
+	margin-left:150px;
+}
+#one {
+	margin-left:130px;
+	margin-top:40px;
+}
+.des{
+	margin-left:150px;
+}

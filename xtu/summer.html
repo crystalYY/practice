@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>summer</title>
+		<meta http-equiv="content-type" content="text/html" charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="summer.css"/>
+	</head>
+	<body>
+		<p><a href="index.html"><img src="main.png"/></a></p>
+		<p><a href="spring.html"><img src="gospring.png"/></a></p>
+		<p><a href="fall.html"><img src="gofall.png"/></a></p>
+		<p><a href="winter.html"><img src="gowinter.png"/></a></p>
+		<p><img src="summer1.png" id="summer1"/></p>
+		<p><img src="summer2.png" id="summer2"/></p>
+		<h6>夏天的雨别有一番情趣，也有独特的性格，坦诚又淘气。</br>
+6月，夏天悄悄地来了。天气猛然热了起来，忽而，又阴沉了下来。</br>
+今天的天气阴，灿烂的阳光躲在了云朵后面，云朵较低，遮住了蓝天。</br>
+夏天的雨，在你没有察觉时，雨点已经从天而降。</br>
+阵阵风吹过，带着清香味，感到很气爽。</br>
+躲在屋檐下，看着如珍珠般的雨点，滴滴答答，</br>
+在地上溅起无数朵水花，仿佛是盛开的花朵。</br>
+想要伸手去捧，清清凉凉，舒舒服服，然而却捧不住，</br>
+雨滴变成细流从指间滑落。空气中凉爽的风吹过脸庞，舒服又惬意。</br>
+远处的房子，被雨水冲过，屋檐干净了。</br>
+汽车在雨中行驶，一辆接一辆，雨水滴在车顶上，溅起水花如雾般朦胧。</br>
+街上行走的人们，撑着花伞。</br>
+远远望去，就像是一朵朵花朵在雨中漫步。</br>
+雨滴滴在了树木上，变成了颗颗珍珠，绿叶上的水滴，犹如音符在歌唱。</br>
+鱼儿在水里欢快地游来游去，滴答答，</br>
+滴答答的雨滴在空中奏起了一曲动人的夏雨交响乐。</br>
+
+窗户玻璃上，雨滴拍打着，啪啪声音</br>
+大珠小珠落玉盘般轻快。</br>
+播放一曲好听的歌曲，歌声在雨滴声伴奏下，点缀了大地的衣裳。</br>
+
+不一会儿，天空突然亮了起来。</br>
+水珠水滴渐渐消失，世界开始变得清晰起来，</br>
+雨停了。彩虹露出了微笑的脸庞。</br>
+
+这，就是夏天的雨。</br>
+不经意间，舒适凉爽，清澈大地。</h6>
+		<script>
+			(function(){
+			var element = document.getElementById("summer1");
+			var r = 0;
+			var i = 1;
+			function rotate(){
+				r += i;
+				if( Math.abs(r) >= 25 ) i*=-1
+				element.style.MozTransform = "rotate(" + r + "deg)";
+				element.style.webkitTransform ="rotate(" + r + "deg)";
+				element.style.msTransform = "rotate(" + r + "deg)";
+				element.style.OTransform = "rotate(" + r + "deg)";
+				element.style.transform = "rotate(" + r + "deg)";
+			}
+
+			var timer = setInterval(rotate,50);
+
+			element.onmouseover = function(){
+				clearInterval(timer);
+				timer = null;
+			};
+
+			element.onmouseout = function(){
+				if(timer)return;
+				timer = setInterval(rotate,30);
+			};
+			}());
+		</script>
+	</body>
+</html>

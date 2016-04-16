@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>图片轮换</title>
+	<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			function leftMove(){
+				$('.picMove ul').css('opacity','0');
+				if(parseInt($(".picMove ul").css('left'))<=-1800){
+					$(".picMove ul").animate({
+						left:"0px",
+						opacity:'+=1'
+					},1000);
+
+				}
+				else{
+					$(".picMove ul").animate({
+						left:"-=600px",
+						opacity:'+=1'
+					},1000);
+				}		
+				$('.picList ul li').removeClass('active');
+				var a=parseInt($('.picMove ul').css('left'))/(-600)+1;
+				if(a==4){
+					$('.picList ul li:eq(0)').addClass('active');
+				}			
+				else{
+					$('.picList ul li:eq('+a+')').addClass('active');
+				}		
+					
+			}
+			$(".leftBtn").click(function(){
+					leftMove();
+			});
+			$('.rightBtn').click(function(){
+				$('.picMove ul').css('opacity','0');
+				if(parseInt($('.picMove ul').css('left'))>=0){
+					$('.picMove ul').animate({
+						left:'-1800px',
+						opacity:'1'
+					},1000);
+				}
+				else{
+					$('.picMove ul').animate({
+						left:'+=600px',
+						opacity:'1'
+					},1000);
+				}
+			});
+			var timer=setInterval(leftMove,4000);
+			/*
+			$('#picmove').mouseover(function(){ //mouseover在一个元素上时只执行一次,区分和mousemove的区别
+				alert('fjfjfjjf');
+			});
+			*/
+			/*
+			document.getElementById('picmove').onmouseover=function(){
+				alert('ffhf');
+			}
+			*/
+			$('.picMove ul').mouseover(function(){
+				clearInterval(timer);
+			});
+			$('.rightBtn').click(function(){
+				clearInterval(timer);
+			});
+			$('.leftBtn').click(function(){
+				clearInterval(timer);
+			});
+			$('.picMove ul').mouseout(function(){
+				timer=setInterval(leftMove,4000);
+			});
+
+			
+			$('.picList ul li').mousedown(function(){
+				clearInterval(timer);
+			});
+			$('.picList ul li').mouseup(function(){
+				timer=setInterval(leftMove,4000);
+			});
+			
+
+			//列表
+			$('.picList ul li').mousedown(function(){
+				$('.picMove ul').css('opacity','0');
+				var leftDistance=$(this).index()*(-600);
+				$('.picList ul li').removeClass('active');
+				$(this).addClass('active');
+				$('.picMove ul').animate({
+					left:leftDistance+'px',
+					opacity:1
+				},1000);
+			});
+		});
+	</script>
+	<style type="text/css">
+		*{margin: 0; padding: 0;}
+		.picMove{border:5px solid #cccccc; width: 600px; height: 500px; overflow: hidden; position: relative; margin: 30px auto;  cursor: pointer; margin-bottom: 10px;}
+		.picMove ul{width: 4800px; position: absolute; left: 0; top: 0;}
+		.picMove ul li{float: left; width: 600px; height: 500px; text-align: center; overflow: hidden;}
+		.picMove ul li img{width: 600px; height: 500px;}
+		.leftBtn{position: absolute; left: 10px; top: 225px; width: 60px; height: 60px; background:url(img/btn.jpg) 0 0 no-repeat; cursor: pointer; }
+		.rightBtn{position: absolute; right: 10px; top: 225px; width: 60px; height: 60px; background: url(img/btn.jpg) 0px -60px no-repeat; cursor: pointer;}
+		.picList{clear: both; width: 610px; margin:0px auto; }
+		.picList ul{float: right;}
+		.picList ul li{float: left; padding: 5px; cursor: pointer; border:1px solid #cccccc; margin-left: 3px; margin-right: 3px; list-style: none; }
+		.active{background-color: yellow;}
+	</style>
+</head>
+<body>
+	<div class="picMove" id="picmove">
+		<ul>
+			<li><img src="img/1.jpeg" alt="one"></li>
+			<li><img src="img/2.jpeg" alt="two"></li>
+			<li><img src="img/3.jpg" alt="three"></li>
+			<li><img src="img/4.jpg" alt="four"></li>
+		</ul>
+		<div class="leftBtn"></div>
+		<div class="rightBtn"></div>
+	</div>
+	<div class="picList">
+		<ul>
+			<li class="active">1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+		</ul>
+	</div>
+</body>
+</html>

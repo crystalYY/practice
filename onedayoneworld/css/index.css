@@ -1,0 +1,91 @@
+@charset "utf-8";
+/* CSS Document */
+body{background-color:#EEEDE1; width:1349px; height:100%;}
+.header{position:relative; width:100%;}
+.top_nav{height:30px; background-color:#F7F7F7;line-height:30px; }
+.top_nav .collection{margin-left:100px;background:url(../img/icon/top_add.jpg) left center no-repeat; padding-left:20px;}
+#searchtxt{background:#fff;boder:1px solid #ccc; margin-right:0;}
+#search{background:#7BDBD9; color:#FFF; cursor:pointer;margin-right:10px;padding:1px;}
+.top_nav .log{margin-right:100px;}
+.top_nav .log a{padding-right:5px;}
+.top_nav a:hover{text-decoration:underline;color:#930;}
+.logo_bar{height:50px;background:white; }
+.logo{margin-left:100px; }
+.logobg{margin-right:100px;}
+.headlineBox{background:url(../img/headbg.png) left top repeat-x; height:50px; width:100%;}
+.headlineBox .textHeadline{height:50px; line-height:50px;}
+.textHeadline li{ display:inline-block; margin-right:30px; text-align:center; font-size:18px; font-family:Arial, Helvetica, sans-serif;}
+.textHeadline li a{padding:10px 20px;}
+.textHeadline li a:hover{background-color:white;}
+.main{width:1000px; margin:10px auto; position:relative;}
+.pictureMove{width:600px; height:230px; border:1px solid #999; position:relative; background-color:blue; overflow:hidden;}
+.main .pictureMove #ul1{position:absolute; bottom:0; left:532px; z-index:3; cursor:pointer;}
+.main .pictureMove #ul1 li{float:left; height:30px; line-height:30px; padding:0 5px;}
+.main .pictureMove #ul1 .active{background-color:#1D7AD9;}
+.main .pictureMove #ul2{width:2400px; position:absolute; bottom:0; left:0; background-color:#F6F6F6;}
+.main .pictureMove #ul2 li{float:left; padding-left:10px; width:590px; height:30px;line-height:30px;}
+.main .pictureMove #ul3{width:2400px; position:absolute; left:0; top:0;}
+.main .pictureMove #ul3 li{float:left;}
+.main .pictureMove #ul3 li img{width:600px; height:200px;}
+.main .summary .titleIcon{ background:url(../img/icon/styleIcon.png) left center no-repeat; width:150px; height:50px; line-height:50px; text-align:center; font-size:18px; }
+.main .summary .titleIcon a{color:black; display:block; margin-left:20px; font-weight:bold;}
+.main .content{height:185px;width:602px; border-top:5px solid #DB6D4C; border-bottom:1px solid #CCCCCC; padding-top:30px; padding-bottom:40px;}
+.main .content .textPicture{width:168px; height:185px; overflow:hidden;}
+.main .content .textPicture img{width:100%; -moz-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease;}
+.main .content .textPicture img:hover{-moz-transform: scale(1.1); -webkit-transform: scale(1.1); -o-transform: scale(1.1); -ms-transform: scale(1.1);}
+.main .content .text{ width:410px; font-family:"Microsoft Yahei",​"Simsun"; color:#756f71; line-height:22px; margin-bottom:10px;}
+.main .content h3{margin-right:100px; margin-bottom:5px;}
+.main .content h3 a:hover{ text-decoration:underline;}
+.main .content .textFooter{font-family:"Microsoft Yahei",​"Simsun"; color:#756f71; height:22px; line-height:22px;}
+.main .content .textFooter .textDate{margin-left:25px; font-size:12px;}
+.main .content .textFooter .textDate a{margin-left:8px;}
+.main .content .textFooter .comment{font-size:12px;}
+.main .content .textFooter .comment a{margin-left:8px;}
+.main .content .textFooter .browser{margin-right:10px; font-size:12px;}
+.main .content .textFooter .browser a{margin-left:8px;}
+.main .rightPlace{width:35%;}
+.main .totleBlog{width:100%; height:230px; border:1px solid #ccc; text-align:center;}
+.main .totleBlog .head{height:122px; line-height:122px;}
+.main .totleBlog .headPhoto{width:100px; height:100px;border-radius:100%; margin-left:20%; margin-top: 20px; line-height:100px; overflow:hidden;}
+.main .totleBlog .headPhoto img{width:100px; height:100px;}
+.main .totleBlog .head h3{font-family:Verdana, Geneva, sans-serif; color:#756f71; line-height:122px;margin-right:20%;}
+.main .totleBlog  .headContact{margin-left:20px;}
+.main .totleBlog  .headContact li{float:left; margin:20px 10px 0 10px; line-height:78px; cursor:pointer;}
+.main .label{width:100%; position:relative; height:283px;}
+.main .label #labelHead{margin-top:20px; cursor:pointer;}
+.main .label #labelHead li{float:left; width:25%; text-align:center; line-height:50px; height:50px; font-size:18px; font-family:"Microsoft Yahei",​"Simsun"; border-bottom:5px solid #DB6D4C;}
+.main .label div{position:absolute; left:0; top:55px; display:none; width:100%; background:url(../img/icon/ph2.png) 0 34px no-repeat;}
+.main .label div ul{ margin-top:30px;}
+.main .label div ul li{margin-bottom:15px; padding-left:25px; font-family:Verdana, Geneva, sans-serif; color:#756f71; font-size:14px; display:block; padding-bottom:5px; border-bottom:1px solid #ccc;}
+.main .label div ul li:hover{ border-bottom:1px solid black;}
+.main #showComment{position:relative; top:28px;}
+.main #showComment p{width:100%; height:50px; padding-bottom:0; border-bottom:5px solid #DB6D4C; font-family:"Microsoft Yahei",​"Simsun"; font-size:20px; line-height:50px;}
+.main #showComment div{margin-top:20px;}
+.main #showComment div ul{width:100%; border-bottom:1px solid #ccc; padding:5px 2px;}
+.main #showComment div ul li{font-weight:bold; font-size:16px; color:#00572C;}
+.main #showComment div ul li ul {padding-left:15px; border:0px solid #ccc;}
+.main #showComment div ul li ul li{font-weight:normal; font-size:14px;  font-family:"Microsoft Yahei",​"Simsun";color:black;}
+.main #showComment div ul li:hover{ text-decoration:underline;}
+.main #showComment .commentDetial .commentDate{margin-left:60%; font-size:12px; font-family:"MS Serif", "New York", serif; margin-top:5px; background:url(../img/icon/newsbg02.png) left center no-repeat; padding-left:20px;}
+.main #showComment .commentDetial .commentAuthor{ background:url(../img/icon/newsbg01.png) left center no-repeat; padding-left:25px; font-size:12px; font-family:"MS Serif", "New York", serif;}
+.main #friendLink{position:relative; top:28px; left:0; width:100%;}
+.main #friendLink p{width:100%; height:50px; padding-bottom:0; border-bottom:5px solid #DB6D4C; font-family:"Microsoft Yahei",​"Simsun"; font-size:20px; line-height:50px;}
+.main #friendLink div{margin-top:20px;}
+.main #friendLink ul{text-align:center;}
+.main #friendLink ul li{width:120px; text-align:center; height:50px; line-height:50px; display:inline-block; margin-bottom:5px;}
+.main #friendLink ul li a{display:block;}
+.main #li1{background:url(../img/icon/link1.png) left center no-repeat;}
+.main #li2{background:url(../img/icon/link2.png) left center no-repeat;}
+.main #li3{background:url(../img/icon/link3.png) left center no-repeat;}
+.main #li4{background:url(../img/icon/link4.png) left center no-repeat;}
+
+/*回到顶部*/
+#returnTop{position: absolute; display: none; cursor: pointer; z-index: 2;}
+#returnTop p{color:white; background: #000080 url(../img/icon/returntop.gif) left center no-repeat; width:100px; text-align: center;line-height: 30px; height: 30px;}
+#footer{ background:url(../img/icon/footerbg.png) left top repeat-x; width:100%; height:50px;}
+#footer p{text-align:center; font-family:"Times New Roman", Times, serif; font-weight:bold; font-size:12px; line-height:16px;}
+
+
+
+
+	

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>手风琴效果的图片展示</title>
+	<style type="text/css">
+		*{margin: 0;padding: 0;}
+		.transPic{width: 1106px; border: 1px solid #ccc; height: 167px; overflow: hidden; margin: 10px auto;}
+		.transPic ul{width: 1116px; height: 167px; overflow: hidden; text-align: center;}
+		.transPic ul li{float: left; border-left: 1px solid black; list-style: none;}
+	</style>
+	<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			function startMove(){
+				var nowPic=$('.bigactive').index();
+				$('.bigactive').animate({
+					width:'200px',
+					height:'167px'
+				},1000,'linear',function(){
+							$(this).find('img').attr('src','img/small'+$(this).index()+'.jpg');
+						});
+				//$('.bigactive').fadeIn(1000);
+				$('.transPic>ul>li').removeClass('bigactive').removeClass('big');
+				if(nowPic==4){
+					$('.transPic>ul>li').eq(0).addClass('bigactive');
+				}
+				else{
+					$('.transPic>ul>li').eq(nowPic+1).addClass('bigactive');
+				}
+				//$('.bigactive').css({'width':'300px','height':'167px'});
+				$('.bigactive').find('img').attr('src','img/big'+$('.bigactive').index()+'.jpg');
+				$('.bigactive').animate({
+					width:'300px',
+					height:'167px'
+					},1000);
+				//$('.bigactive').fadeIn(1000);
+			}
+			var timer=setInterval(startMove,3000);
+			$('.transPic>ul>li').mouseover(function(){
+				var i=$(this).index();
+				clearInterval(timer);
+				$('.transPic>ul>li').stop(true,true);
+				if($(this).find('img').css('width')=='300px'){
+					return;
+				}
+				else{
+					//$('.bigactive').css({'width':'200px','height':'167px'});
+					//$('.bigactive').fadeOut(500);
+					$('.bigactive').animate({
+						width:'200px',
+						height:'167px'
+					},1000,'linear',function(){
+						$(this).find('img').attr('src','img/small'+$(this).index()+'.jpg');
+					});
+					//$('.bigactive').fadeIn(500);
+					$('.transPic>ul>li').removeClass('bigactive').removeClass('big');
+					$(this).addClass('bigactive');
+					//$('.bigactive').css({'width':'300px','height':'167px'});
+					$(this).find('img').attr('src','img/big'+i+'.jpg');
+					$(this).animate({
+						width:'300px',
+						height:'167px'
+					},1000);
+					//$('.bigactive').fadeIn(1000);
+				}
+			});
+			$('.transPic>ul>li').mouseout(function(){
+				timer=setInterval(startMove,3000);
+			});
+		
+			
+		});
+	</script>
+</head>
+<body>
+	<div class="transPic">
+		<ul>
+			<li class="big bigactive"><a href="javascript:void(0);"><img src="img/big0.jpg"></a></li>
+			<li><a href="javascript:void(0);"><img src="img/small1.jpg"></a></li>
+			<li><a href="javascript:void(0);"><img src="img/small2.jpg"></a></li>
+			<li><a href="javascript:void(0);"><img src="img/small3.jpg"></a></li>
+			<li><a href="javascript:void(0);"><img src="img/small4.jpg"></a></li>
+		</ul>
+	</div>
+</body>
+</html>

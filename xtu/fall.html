@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>fall</title>
+		<meta http-equiv="content-type" content="text/html" charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="fall.css"/>
+	</head>
+	<body>
+		<p><a href="index.html"><img src="main.png"/></a></p>
+		<p><a href="spring.html"><img src="gospring.png"/></a></p>
+		<p><a href="summer.html"><img src="gosummer.png"/></a></p>	
+		<p><a href="winter.html"><img src="gowinter.png"/></a></p>
+		<p><img src="fall1.png" id="fall1"/></p>
+		<p><img src="fall2.png" id="fall2"/></p>
+		<h6>被雨洗过的清晨，清亮清亮的。</br>
+		漫步校园，空气中弥漫着一股浓郁的花香。</br>
+		我知道，又是一年桂花飘香时！</br>
+		我不禁驻足深吸一口气，仿佛觉得那股香气要渗进骨子里去，甚是享受。</br>
+
+闻着花香，随着兴致，我不知不觉来到了一教，</br>
+远远地便瞅见了那挺立风中的桂树。</br>
+桂花不像梅花那样造型别致，不像菊花那样多姿多彩，</br>
+也不像牡丹花那样雍容富贵，它只在这秋风飒飒的时节静悄悄地绽放。</br>
+它只在这个属于它的季节，把蕴藏了整个春天的温情，</br>
+整个夏天的热烈尽情地释放！</br>
+远远地，那几棵桂树虽不高大，但却给人一种坚毅之感。</br>
+一眼望去，那层层叠叠的绿叶中泛着点点的嫩黄，宛若夏夜星辰。</br>
+那些桂花一团团，一簇簇，挨挨挤挤，亲密无间，一起倾听着秋的脚步和独韵。</br>
+
+我信步来到桂树下，仔细端详着那娇小玲珑的桂花。</br>
+在秋雨的滋润下，挂满枝头的桂花更显饱满圆润。</br>
+我欣赏着，遐想着……这些桂花有的像一个个小精灵正酣畅淋漓地吮吸着天地之精华</br>
+，有的像含羞的少女把自己藏于绿叶丛中 “犹抱琵琶半遮面”，</br>
+有的像顽皮的孩童迫不及待地探出了脑袋……微风拂过，</br>
+朵朵桂花禁不住风儿的盛情邀请，挣脱了妈妈的怀抱在风中自由舞蹈，</br>
+而风儿的到来也似乎是在寂寞了一夏后特意赶来欣赏这优美的舞姿的。</br>
+站在桂树下，任由桂花飘落于我的发间，</br>
+或在我的肩头逗留，又或从我的身体轻轻滑落。</br>
+在那一刻，我只想闭眼，</br>
+屏气呼吸这纯得不含一丝杂渍的清香，恨不得这香气能与我的血液融为一体。</h6>
+		<script>
+			(function(){
+			var element = document.getElementById("fall1");
+			var r = 0;
+			var i = 1;
+			function rotate(){
+				r += i;
+				if( Math.abs(r) >= 25 ) i*=-1
+				element.style.MozTransform = "rotate(" + r + "deg)";
+				element.style.webkitTransform ="rotate(" + r + "deg)";
+				element.style.msTransform = "rotate(" + r + "deg)";
+				element.style.OTransform = "rotate(" + r + "deg)";
+				element.style.transform = "rotate(" + r + "deg)";
+			}
+
+			var timer = setInterval(rotate,50);
+
+			element.onmouseover = function(){
+				clearInterval(timer);
+				timer = null;
+			};
+
+			element.onmouseout = function(){
+				if(timer)return;
+				timer = setInterval(rotate,30);
+			};
+			}());
+		</script>
+	</body>
+</html>

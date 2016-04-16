@@ -1,0 +1,38 @@
+body{
+	background:url(background.png) left top repeat-x;
+}
+
+#spring3{
+	position:absolute;
+	top:80px;
+	left:180px;
+	z-index:999;
+}
+h6{
+	position:absolute;
+	top:100px;
+	left:500px;
+}
+#spring2{
+	position:absolute;
+	top:10px;
+	left:950px;
+	transform:rotate(-17deg);
+}
+#summer1{
+	position:absolute;
+	top:40px;
+	left:150px;
+	z-index:999;
+}
+#summer2{
+	position:absolute;
+	top:40px;
+	left:950px;
+	transform:rotate(-17deg);
+}
+#artical{
+	position:absolute;
+	top:100px;
+	left:700px;
+}

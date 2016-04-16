@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>winter</title>
+		<meta http-equiv="content-type" content="text/html" charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="winter.css"/>
+	</head>
+	<body>
+		<p><a href="index.html"><img src="main.png"/></a></p>
+		<p><a href="spring.html"><img src="gospring.png"/></a></p>
+		<p><a href="summer.html"><img src="gosummer.png"/></a></p>
+		<p><a href="fall.html"><img src="gofall.png"/></a></p>
+		<p><img src="winter1.png" id="winter1"/></p>
+		<p><img src="winter2.png" id="winter2"/></p>
+		<h6>风儿迈着轻快的脚步走过四季，将含情脉脉的目光放在了雪飘如絮的冬天；我爱冬。</br>
+
+冬的凉意是淡雅素净的。冬是那么的美好！但却是一种勇敢者的享受。</br>
+毕竟没有一个季节是完美的，哪怕是百花齐放的春天。</br>
+冬风仿佛在考验你的意志，当你昂首对风时，你会发现，其实并不冷哪！</br>
+
+冬雪是纯洁晶莹的。整个大地银装素裹，晶莹皎洁，一望无际的白连接着天地之间,</br>
+清新悦目。雪花儿徐徐地仙女般降落在人间，脉脉动地、轻轻地、凉丝丝地……</br>
+让我想起《秦时明月》里清新脱俗地雪女，让我想起《飞雪玉花》这优美的古筝之曲。</br>
+
+冬梅是淡雅的。如同少女出浴般的恬静，少女哭泣时的忧伤，少女幽会时的甜蜜</br>
+一簇簇的红梅如同黛玉的茜纱帐般，朦胧地笼罩着我，使人也渲染在一片鲜亮而脱俗的梦境之中。</br>
+
+在我最完美的想象中，冬天是一望无尽的银色，雪飘呀飘，飘落在几株开得正旺的梅树上。</br>
+树上的梅花清新脱俗地挺立在枝干上。一阵阵凉彻心底的风儿刮过，</br>
+不仅使人心神冰凉，还顺便掠走了一肚子的委屈、哀伤。</br>
+
+忆往昔，雪映朦胧天夜静谧，多少次，梅花树下赞寂冬。</br>
+若说夏之色为暖的金，如朝霞，如麦浪，饱含生命的活力；</br>
+那么冬之色则应为冰的银，如玉雪，如飞花，更似少女古朴淡雅的妆姿，</br>
+同为两极性，为何冬意如此富有诗情画意呢？</h6>
+		<script>
+			(function(){
+			var element = document.getElementById("winter1");
+			var r = 0;
+			var i = 1;
+			function rotate(){
+				r += i;
+				if( Math.abs(r) >= 25 ) i*=-1
+				element.style.MozTransform = "rotate(" + r + "deg)";
+				element.style.webkitTransform ="rotate(" + r + "deg)";
+				element.style.msTransform = "rotate(" + r + "deg)";
+				element.style.OTransform = "rotate(" + r + "deg)";
+				element.style.transform = "rotate(" + r + "deg)";
+			}
+
+			var timer = setInterval(rotate,50);
+
+			element.onmouseover = function(){
+				clearInterval(timer);
+				timer = null;
+			};
+
+			element.onmouseout = function(){
+				if(timer)return;
+				timer = setInterval(rotate,30);
+			};
+			}());
+		</script>
+	</body>
+</html>

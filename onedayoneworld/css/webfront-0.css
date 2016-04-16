@@ -1,0 +1,53 @@
+body{background-color:#EEEDE1; width:1349px; height:100%;}
+
+/*头部*/
+.header{position:relative; width:100%;}
+.top_nav{height:30px; background-color:#F7F7F7;line-height:30px; }
+.top_nav .collection{margin-left:100px;background:url(../img/icon/top_add.jpg) left center no-repeat; padding-left:20px;}
+#searchtxt{background:#fff;boder:1px solid #ccc; margin-right:0;}
+#search{background:#7BDBD9; color:#FFF; cursor:pointer;margin-right:10px;padding:1px;}
+.top_nav .log{margin-right:100px;}
+.top_nav .log a{padding-right:5px;}
+.top_nav a:hover{text-decoration:underline;color:#930;}
+.logo_bar{height:50px;background:white; }
+.logo{margin-left:100px; }
+.logobg{margin-right:100px;}
+.headlineBox{background:url(../img/headbg.png) left top repeat-x; height:50px; width:100%;}
+.headlineBox .textHeadline{height:50px; line-height:50px;}
+.textHeadline li{ display:inline-block; margin-right:30px; text-align:center; font-size:18px; font-family:Arial, Helvetica, sans-serif;}
+.textHeadline li a{padding:10px 20px;}
+.textHeadline li a:hover{background-color:white;}
+
+/*主要内容*/
+.main{width:1000px; margin:10px auto; position:relative; min-height: 430px;}
+
+#nowlocal{font-family: "黑体" ;font-size: 12px;}
+#nowlocal span{padding-left: 5px; padding-right: 5px;}
+/*左侧*/
+.main #left{width:625px; min-height: 430px; border-right: 2px solid #6495ED; padding-right: 20px;}
+.main #left h2{text-align: center; line-height: 30px; font-family: "黑体"; }
+.main #left h6{text-align: right; line-height: 20px; font-family: "幼圆";}
+.main #left p{margin-top: 10px; text-indent: 25px; line-height: 20px; font-family: "宋体"; font-size:14px; word-wrap: break-word;}
+.main #left #showResult textarea{width:300px; height: 200px; border: 1px solid #999; overflow-y:scroll; }
+.main #left #showResult input{padding:3px; background: #87CEFA; border-radius: 50%; cursor: pointer;}
+
+/*右侧*/
+.totleBlog{width:330px; height:230px; border:1px solid #ccc; text-align:center;}
+.main .totleBlog .head{height:122px; line-height:122px;}
+.main .totleBlog .headPhoto{width:100px; height:100px;border-radius:100%; margin-left:20%; margin-top: 20px; line-height:100px; overflow:hidden;}
+.main .totleBlog .headPhoto img{width:100px; height:100px;}
+.main .totleBlog .head h3{font-family:Verdana, Geneva, sans-serif; color:#756f71; line-height:122px;margin-right:20%;}
+.main .totleBlog  .headContact{margin-left:20px;}
+.main .totleBlog  .headContact li{float:left; margin:20px 10px 0 10px; line-height:78px; cursor:pointer;}
+
+.main .hotArtical{width: 330px;margin-top: 10px; }
+.main .hotArtical p{border-bottom: 2px solid #6495ED; line-height: 20px; font-family: "黑体"; font-size: 16px;}
+.main .hotArticals li{font-size:14px; font-family: "宋体"; margin-top: 10px; background: url(../img/icon/liicon.gif) left center no-repeat; line-height: 20px; padding-left: 20px;}
+.main .hotArticals li:hover{ border-bottom: 1px solid #4169E1; }
+
+/*回到顶部*/
+#returnTop{position: absolute; display: none; cursor: pointer; z-index: 2;}
+#returnTop p{color:white; background: #000080 url(../img/icon/returntop.gif) left center no-repeat; width:100px; text-align: center;line-height: 30px; height: 30px;}
+/*页脚*/
+#footer{ background:url(../img/icon/footerbg.png) left top repeat-x; width:100%; height:50px; position:relative; top:10px;}
+#footer p{text-align:center; font-family:"Times New Roman", Times, serif; font-weight:bold; font-size:12px; line-height:16px;}

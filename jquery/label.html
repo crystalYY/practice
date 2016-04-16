@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="htf-8">
+	<title>标签卡</title>
+	<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var now=0;
+			$(".tagContent img:not(:first)").hide();
+			$(".tagName li").click(function(){
+				var a=$(this).index();
+				if(a!=now){
+					$(".tagContent img").hide(5000);
+					$(".tagContent img:eq("+a+")").show(5000);
+				}				
+				now=$(this).index();
+			});
+		});
+	</script>
+	<style type="text/css">
+		*{margin: 0px; padding: 0px;}
+		.tagName{margin: 20px auto; width: 250px; overflow: hidden;}
+		.tagName ul li{float: left; padding: 3px; background-color: #4BC7C7; margin: 3px; border-radius: 10%;height: 20px; width: 40px; list-style: none; text-align: center; cursor: pointer;}
+		.tagContent{clear: both; margin: 10px auto; width: 550px;}
+		.tagContent img{width: 550px; height: 500px;}
+	</style>
+</head>
+<body>
+	<div class="tagName">
+		<ul>
+			<li>one</li>
+			<li>two</li>
+			<li>three</li>
+			<li>four</li>
+		</ul>
+	</div>
+	<div class="tagContent">
+		<img src="img/1.jpeg" alt="one" />
+		<img src="img/2.jpeg" alt="two" />
+		<img src="img/3.jpg" alt="three" />
+		<img src="img/4.jpg" alt="four" />
+	</div>
+</body>
+</html>

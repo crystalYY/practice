@@ -1,0 +1,371 @@
+	*{margin: 0px; padding: 0px; }
+		.active{
+			background-color: #fff;
+		}
+		html{min-width: 630px;}
+		.nav{
+			height: 60px; 
+			width: 100%;
+			background-color: #C0C0C0;
+			overflow: hidden;
+			line-height: 60px;
+		}
+		.nav .nava{
+			width: 300px;
+			margin: 0px auto;
+			line-height: 60px;
+		}
+		.nav a{
+			display: inline-block;
+			padding: 5px;
+			padding-top: 10px;
+			text-decoration: none;
+		}
+		.nav a:hover{
+			background-color: #fff;
+		}
+		.nav a img{
+			width: 43px;
+			height: 41px;
+		}
+		.show{
+			width: 100%;
+			height: 600px;
+			background:url(img/show.jpg) left top no-repeat;
+			background-size:cover;
+		}
+		.base{
+			width: 100%;
+			overflow: hidden;
+			background: url(img/skill.jpg) left top no-repeat;
+			background-size: cover;
+			font-weight: bold;
+		}
+		.base .about{
+			width: 40%;
+			background-color: #fff;
+			float: left;
+		}
+		.base .about h3{
+			margin:0px auto;
+			padding: 100px 0px;
+			width: 100px;
+			font-size: 26px;
+			color: #566366;
+			font-family: "Microsoft yahei";
+			font-weight: normal;
+		}
+		.base .about h3 span{
+			font-size: 14px;
+			color: #999;
+			font-family: Monaco, Consolas, "Lucida Console", monospace;
+		}
+		.base .showBase{
+			padding: 10px;
+		}
+		.base .showBase .baseinfor{			
+			color: #fff;
+			position: relative;
+			left: 70px;
+			float: left; 
+		}
+		.base .showBase .baseedu{
+			float: left;
+			position: relative;
+			left: 160px;
+			line-height: 40px;
+			color: #fff;
+		}
+		.base .showBase li{
+			list-style: none;
+			line-height: 40px;
+			padding-left:50px;
+			background: url(img/baseintro.gif) left center no-repeat;
+		}
+		.skill{
+			width: 100%;
+			background: url(img/skill.jpg) left top no-repeat;
+			background-size: cover;
+			overflow: hidden;
+		}
+		.skill .skills{
+			float: left;
+		}
+		.skill .skills ul{
+			padding: 10px;
+			margin-left: 100px;
+			list-style: none;
+		}
+		.skill .skills ul li{
+			line-height: 40px;
+			font-family: Cambria, Georgia, Times, "Times New Roman", serif;
+			color:#fff;
+		}
+		.skill .skills ul li .out{
+			display: inline-block;
+			width: 300px;
+			border: 1px solid #800000;
+			height: 10px;
+			border-radius: 2px;
+			margin-right: 10px;
+			margin-left: 10px;
+		}
+		.skill .skills ul li .out div{
+			height:10px;
+		}
+		.skill .skills ul li .out .in1{
+			width: 70%;
+			background-color: #5B00AE;
+		}
+		.skill .skills ul li .out .in2{
+			width: 55%;
+			background-color: #6F00D2;
+		}
+		.skill .skills ul li .out .in3{
+			width: 30%;
+			background-color: #8600FF;
+		}
+		.skill .skills ul li .out .in4{
+			width: 10%;
+			background-color: #B15BFF;
+		}
+		.skill .skills ul li .out .in5{
+			width: 10%;
+			background-color: #B15BFF;
+		}
+		.skill .skills ul li .out .in6{
+			width: 10%;
+			background-color: #B15BFF;
+		}
+		.skill .skills ul li .out .in7{
+			width: 5%;
+			background-color: #d3a4ff;
+		}
+		.skill h3{
+			float:right;
+			padding:120px 150px 0px 150px;
+			height: 180px;
+			font-family: 'Microsoft yahei';
+			font-weight: normal;
+			font-size: 26px;
+			color: #566366;
+			margin-left: 50px;
+			background: #fff;
+		}
+		.skill h3 span{
+			font-size: 14px;
+			color: #999;
+			font-family: Monaco, Consolas, "Lucida Console", monospace;
+		}
+		.skill .skills h4{
+			margin-top: 20px;
+			line-height: 40px;
+			font-family: 'Microsoft yahei';
+			font-weight: normal;
+			font-size: 26px;
+			color: #566366;
+			margin-left: 50px;
+			display: none;
+		}
+		/*experience*/
+		.experience{
+			min-height: 780px;
+			border-bottom:2px solid #c0c0c0;
+		}
+		.experience .labels{
+			width: 100%;
+			background-color: #c0c0c0;
+			height: 60px;
+			list-style: none;
+			border-top: 1px solid #c0c0c0;
+		}
+		.experience .labels li{
+			margin-left: 20px;
+			float: left;
+			padding:0px 20px;
+			line-height: 60px; 
+			font-size: 16px;
+			font-family: "黑体";
+			cursor: pointer;
+		}
+		.experience .container{
+			border-top: none;
+			padding: 20px;
+		}
+		.experience .container ul{
+			margin-left: 20px;
+		}
+		.experience .container ul li dl dt{
+			font-size: 16px;
+			font-weight: bold;
+			
+			line-height: 30px;
+		}
+		.experience .container ul li dl dd{
+			font-family: '黑体';
+			line-height: 26px;
+		}
+		.experience .container ul li div{
+			margin: 20px;
+			line-height: 26px;
+		}
+		.experience .container ul li div a{
+			text-decoration: none;
+			color: #6E5352;
+			font-weight: bold;
+		}
+		.experience .container .container3 p{
+			font-weight: bold;
+			font-style: italic;
+			font-size: 18px;
+			line-height: 30px;
+		}
+		.experience .container .container3 li{
+			margin-left: 50px;
+		}
+		.experience .container ul li div a:hover{
+			text-decoration: underline;
+			color: #E74F4D;
+		}
+		.experience .container .container4 > li{
+			padding-left: 30px;
+			list-style: none;
+			line-height: 30px;
+			background:url(img/zuopin.png) left 10px no-repeat; 
+		}
+		.experience .container .container4 li a{
+			text-decoration: none;
+			color: #842B00;
+		}
+		.experience .container .container4,.container2,.container3{
+			display: none;
+		}
+		.introduction{
+			position: relative;
+			width: 100%;
+			overflow-y: scroll;
+			height: 500px;
+		}
+		/*
+		.introduction img{
+			float: left;
+			position: absolute;
+			left: 15%;
+			top:15%;
+			width: 200px;
+			height: 200px;
+			border-radius: 100px;
+		}
+		*/
+		
+		.introduction .introImg{
+			position: relative;
+			cursor: pointer;
+			float: left;
+			position: absolute;
+			left: 50%;
+			top:50%;
+			margin-left: -200px;
+			margin-top: -200px;
+			width: 400px;
+			height: 400px;
+			border-radius: 50%;
+			opacity: 1;
+			overflow: hidden;
+		}
+		.introduction .introImg img{	
+			width:100%;
+			height: 100%;
+			border-radius: 50%;		
+		}
+		.introduction span{
+			opacity: 0;
+			float: left;
+			position: absolute;
+			left: 50%;
+			top:50%;
+			margin-left: -50px;
+			font-size: 30px;
+			font-family:Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+		}
+		/*
+		@keyframes intro{
+			from{opacity: 1}
+			to{opacity: 0.5}
+		}
+		@-o-keyframes intro{
+			from{opacity: 1}
+			to(opacity: 0.5)
+		}
+		@-moz-keyframes intro{
+			from(opacity: 1)
+			to(opacity: 0.5)
+		}
+		@-webkit-keyframes intro{
+			from{opacity: 1}
+			to(opacity: 0.5)
+		}
+		.introduction img:hover{
+			animation: intro 1s ease forwards;
+			-o-animation:intro 1s forwards;
+			-moz-animation:intro 1s forwards;
+			-webkit-animation: intro 1s  ease forwards;
+		}
+		*/
+		.introduction .intro{
+			display: none;
+			float: left;
+			position: absolute;
+			left: 42%;
+			top: 10%;
+			padding: 20px;
+			width: 50%;
+			opacity: 0;
+		}
+		.introduction .intro h4{
+			line-height: 40px;
+			text-align: center;
+		}
+		.introduction .intro p{
+			text-indent: 2em;
+			line-height: 26px;
+		}
+		/*connect*/
+		.connect{
+			padding: 10px 0px;
+			width: 100%;
+			text-align: center;
+			border-top:1px solid #ccc;
+		}
+		.connect a{
+			margin:0px 10px;
+		}
+		.connect a img{
+			width: 30px;
+			height: 30px;
+		}
+		footer{
+			padding: 10px 0px;
+			background-color: #c0c0c0;
+			text-align: center;
+			font-family:Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+		}
+		@media (max-width:1150px){
+			.base .about{
+				width: 100%;
+				float: none;
+				background: #fff url(img/bottom.gif) 48% 90% no-repeat;
+			}
+			.skill{
+				background: #fff;				
+			}
+			.skill .skills ul li{
+				color:#000;
+			}
+			.skill h3{
+				display: none;
+			}
+			.skill .skills h4{
+				display: block;
+			}
+		}
