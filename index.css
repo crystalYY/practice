@@ -169,8 +169,9 @@
 		}
 		/*experience*/
 		.experience{
-			min-height: 780px;
+			min-height: 810px;
 			border-bottom:2px solid #c0c0c0;
+			overflow: hidden;
 		}
 		.experience .labels{
 			width: 100%;
