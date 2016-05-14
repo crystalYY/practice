@@ -62,6 +62,7 @@
 		}
 		.base .showBase{
 			padding: 10px;
+			overflow: hidden;
 		}
 		.base .showBase .baseinfor{			
 			color: #fff;
