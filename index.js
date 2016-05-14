@@ -175,11 +175,13 @@
 				startMove(intro,{opacity:0});
 			}
 		};
-		introImg.onmouseover=function(){
+		setInterval(function(){
 			startMove(introimg,{opacity:50});
 			startMove(imgspan,{opacity:100});
-		}
-		introImg.onmouseout=function(){
+		},3000);
+			
+		setInterval(function(){
 			startMove(introimg,{opacity:100});
 			startMove(imgspan,{opacity:0});
-		}
+		},5000);
+			
