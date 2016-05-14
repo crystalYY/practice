@@ -37,8 +37,6 @@
 		.base{
 			width: 100%;
 			overflow: hidden;
-			background: url(img/skill.jpg) left top no-repeat;
-			background-size: cover;
 			font-weight: bold;
 		}
 		.base .about{
@@ -62,10 +60,13 @@
 		}
 		.base .showBase{
 			padding: 10px;
+			padding-bottom: 20px;
 			overflow: hidden;
+			background: url(img/skill.jpg) left top no-repeat;
+			background-size: cover;
 		}
 		.base .showBase .baseinfor{			
-			color: #fff;
+			color:#228B22;
 			position: relative;
 			left: 70px;
 			float: left; 
@@ -73,9 +74,9 @@
 		.base .showBase .baseedu{
 			float: left;
 			position: relative;
-			left: 160px;
+			left: 150px;
 			line-height: 40px;
-			color: #fff;
+			color: #228B22;
 		}
 		.base .showBase li{
 			list-style: none;
@@ -100,7 +101,7 @@
 		.skill .skills ul li{
 			line-height: 40px;
 			font-family: Cambria, Georgia, Times, "Times New Roman", serif;
-			color:#fff;
+			color:#228B22;
 		}
 		.skill .skills ul li .out{
 			display: inline-block;
@@ -353,6 +354,13 @@
 			font-family:Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 		}
 		@media (max-width:1150px){
+			.base{
+				width: 100%;
+				overflow: hidden;
+				background: url(img/skill.jpg) left top no-repeat;
+				background-size: cover;
+				font-weight: bold;
+			}
 			.base .about{
 				width: 100%;
 				float: none;
