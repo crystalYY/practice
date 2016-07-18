@@ -12,7 +12,7 @@ body{
 #headline{
 	background:url(dh.jpg) left center repeat-x;
 	height:40px;
-	width:1058px;
+	width:1060px;
 	margin-top:-18px;
 	padding-left:20px;
 	margin-left:3px;
@@ -55,9 +55,6 @@ body{
 	font-style:\9ED1\4F53;
 	text-decoration:none;
 }
-#firstline{
-	margin-left:2px;
-}
 #zhaosheng{
 	border:1px solid #87CEFA;
 	width:225px;
@@ -77,9 +74,47 @@ body{
 	font-weight:bold;
 }
 #zhaosheng a{
-	margin-left:32px;
+	text-decoration:none;
+	color:white;
+	margin-left:40px;
 	margin-top:20px;
 	display:block;
+}
+#zhaosheng a:link{
+	color:white;
+}
+#zhaosheng a:hover{
+	color:white;
+	text-decoration:none;
+}
+#zhaosheng a:visit{
+	color:white;
+	text-decoration:none;
+}
+#zhaosheng a:active{
+	color:white;
+	text-decoration:none;
+}
+#jianzhang{
+	background:url(zs.png) left center no-repeat;
+	margin-left:30px;
+	margin-right:30px;
+	height:30px;
+	margin-top:30px;
+	padding-bottom:2px;
+	display:block;
+}
+#jianzhang a{
+	padding-top:5px;
+}
+#liucheng{
+	background:url(bk.png) center center no-repeat;
+	height:30px;
+	margin-left:30px;
+	margin-right:30px;
+}
+#liucheng a{
+	padding-top:5px;
 }
 #lianxi{
 	border:1px solid #87CEFA;
@@ -192,7 +227,7 @@ body{
 #link a:hover{
 	color:blue;
 }
-.sub_box{width:840px;height:350px;margin:0 auto 0 auto;position:absolute;top:190px;left:370px;overflow:hidden;border:1px solid #6495ED;margin:0;padding:0;list-style-type:none;}
+.sub_box{width:840px;height:350px;margin:0 auto 0 auto;position:absolute;top:244px;left:370px;overflow:hidden;border:1px solid #6495ED;margin:0;padding:0;list-style-type:none;}
 .sub_box img{width:840px;height:350px;border:0}
 #bd1lfimg{position:relative;width:840px;height:350px;overflow:hidden;}
 #bd1lfimg div{width:100000px;margin-left:836px;}
@@ -213,7 +248,7 @@ body{
 #message{
 	position:absolute;
 	left:370px;
-	top:548px;
+	top:602px;
     width:547px;
     height:350px;
 	border:1px solid #87CEFA;
@@ -268,7 +303,7 @@ body{
 #dongtai{
 	position:absolute;
 	left:370px;
-	top:907px;
+	top:962px;
     width:549px;
     height:330px;
 	border:1px solid #87CEFA;
@@ -320,7 +355,7 @@ body{
 }
 #lecture{
 	position:absolute;
-	top:548px;
+	top:602px;
 	left:930px;
 	width:280px;
 	border:1px solid #87CEFA;
@@ -371,7 +406,7 @@ body{
 }
 #yjs{
 	position:absolute;
-	top:683px;
+	top:737px;
 	left:935px;
 	margin-left:10px;
 	width:260px;
@@ -405,7 +440,7 @@ body{
 }
 #timetable{
 	position:absolute;
-	top:907px;
+	top:962px;
 	left:930px;
 	width:280px;
 	border:1px solid #87CEFA;
