@@ -111,8 +111,8 @@
 				return getComputedStyle(obj, false)[name];
 			}
 		}
-				function startMove(obj, json, fnEnd)
-			{
+		function startMove(obj, json, fnEnd)
+		{
 		clearInterval(obj.timer);
 		obj.timer=setInterval(function (){
 			var bStop=true;	
