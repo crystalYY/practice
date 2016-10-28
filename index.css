@@ -14,6 +14,7 @@
 			width: 300px;
 			margin: 0px auto;
 			line-height: 60px;
+			padding-left: 100px;
 		}
 		.nav a{
 			display: inline-block;
@@ -33,6 +34,33 @@
 			height: 600px;
 			background:url(img/show.jpg) left top no-repeat;
 			background-size:cover;
+			box-sizing:border-box;
+			overflow: hidden;
+		}
+		.showInner{
+			width: 300px;
+			position: absolute;
+			top: 45%;
+			left: 40%;
+		}
+		.show h2{
+			text-align: center;
+			padding: 5px;
+			border-bottom: 1px solid #fff;
+			font-family:Monospace Sans-serif;
+			color: #aaa;
+			cursor: pointer;
+		}
+		.show h2:hover{
+			color: #fff;
+		}
+		.show p{
+			text-align: center;
+			padding: 5px;
+			color: #AA0000 ;
+			font-weight: bold;
+			font-family: '隶书';
+			display: none;
 		}
 		.base{
 			width: 100%;

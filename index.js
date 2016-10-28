@@ -1,3 +1,10 @@
+/*
+	show内容点击转换
+*/
+$('.show h2').click(function(){
+	$('.show p').slideToggle('slow');
+});
+
 //导航滚动
 		var toskill=document.getElementById('toskill');
 		var toexperience=document.getElementById('toexperience');
